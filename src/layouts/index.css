@@ -15,8 +15,8 @@ a {
 }
 
 .Hero {
-  height: 920px;
   background-color: rgba(251,251,251,1);
+  padding: 0 0 1px 0;
 }
 
 .HeroGroup {
@@ -80,7 +80,9 @@ a {
 }
 
 .CardGroup {
-  margin: 50px 0 100px;
+  margin: 50px 0 60px;
   display: grid;
   grid-row-gap: 60px;
+  z-index: 100;
+  background-color: rgba(251,251,251,1);
 }
