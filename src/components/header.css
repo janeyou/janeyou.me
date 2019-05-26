@@ -72,9 +72,11 @@
 .MenuDiv {
   width: 100%;
   transition: 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  margin: 30px 0 0 0;
 }
 
 .MenuDivScrolled {
+  margin: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -137,6 +139,10 @@
     border-radius: 10px;
     outline: none;
     cursor: pointer;
+}
+
+.WaveDiv {
+  margin: -50px 0 0 0;
 }
 
 @media (max-width: 640px) {

@@ -55,7 +55,7 @@ class Header extends React.Component {
                 <Link to="/talks"><span className="Number">15</span><br /> <ColoredLine color="lightgrey" />Talks</Link>
               </div>
             </div>
-            <Wave />
+            <div className="WaveDiv"><Wave /></div>
           </div>
         </div>
       </div>
