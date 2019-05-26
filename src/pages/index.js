@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card';
 import Section from '../components/Section';
+import projectData from '../../data/projects.json'
 
 const IndexPage = () => (
   <div>
@@ -15,27 +16,15 @@ const IndexPage = () => (
           <img src={require('../images/diy.svg')} width="50"/>
         </div>
         <div className="CardGroup">
-          <Card 
-          title="Uniform Product Metrics"
-          text="A set of standardized product usage metrics to measure the success of cloud and desktop products, with the goal of providing high-level data awareness to internal employees."
-          type="Autodesk"
-          tags="#dataproducts"
-          image={require('../images/proj_aelchemy.png')}
+        {projectData.data.map(cell => (
+          cell.sharing==='public'&&<Card 
+          title={cell.title}
+          text={cell.description}
+          type={cell.type}
+          tags={cell.tags}
+          image={require('../images'+cell.imgName)}
           />
-          <Card 
-          title="Uniform Product Metrics"
-          text="A set of standardized product usage metrics to measure the success of cloud and desktop products, with the goal of providing high-level data awareness to internal employees."
-          type="Autodesk"
-          tags="#dataproducts"
-          image={require('../images/proj_upm.png')}
-          />
-          <Card 
-          title="Uniform Product Metrics"
-          text="A set of standardized product usage metrics to measure the success of cloud and desktop products, with the goal of providing high-level data awareness to internal employees."
-          type="Autodesk"
-          tags="#dataproducts"
-          image={require('../images/proj_aelchemy.png')}
-          />
+        ))}
         </div>
       </div>
     </div>
