@@ -1,0 +1,131 @@
+.Header {
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+    background-color: rgba(251,251,251,1);
+    background-image: url('../images/bg_414.png');
+    background-size: cover;
+    position: relative;
+  }
+  
+  .HeaderGroup {
+    margin: 0 auto;
+    padding: 150px 50px;
+    text-align: center;
+    max-width: 760px;
+  }
+
+  .Header h1 {
+    margin: 0;
+    color: grey;
+    font-size: 26px;
+    font-weight: 50;
+    line-height: 3;
+    opacity: 0;
+    animation: HeroAnimation;
+    animation-delay: 0.1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .Header h2 {
+    margin: 0;
+    color: grey;
+    font-size: 15px;
+    font-weight: 50;
+    line-height: 1.2;
+    animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+    opacity: 0;
+  }
+  
+  .Header p {
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    font-weight: 50;
+    line-height: 1.5;
+    animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+    opacity: 0;
+  }
+
+  .Header img {
+    animation: HeroAnimation 3s 0.05s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+    opacity: 0;
+  }
+
+  .Header svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  }
+
+  .Menu {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      align-items: center;
+      justify-items: center;
+      animation: HeroAnimation 3s 0.3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+      opacity: 0;
+  }
+
+  .Menu a {
+    font-size: 17px;
+    font-weight: 300;
+    color: lightgrey;
+    background:white;
+    width: 60px;
+    height: 60px;
+    padding: 9px 9px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 60px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .Menu a:hover {
+    color: grey;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    transform: translateY(-3px);
+  }
+
+  .Number {
+    font-size: 22px;
+    font-weight: 50;
+  }
+
+  .Menu button {
+      padding: 8px 20px;
+      font-size: 20px;
+      background: #56ccf2;
+      border: none;
+      font-weight: 700;
+      border-radius: 10px;
+      outline: none;
+      cursor: pointer;
+  }
+
+  @media (max-width: 640px) {
+      .Header {
+          padding: 0;
+      }
+
+      .Menu {
+          grid-template-columns: repeat(3,atuo)
+      }
+
+      .Header a:nth-child(2) {
+          display: none;
+      }
+  }
+
+  @keyframes HeroAnimation {
+      0% {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
