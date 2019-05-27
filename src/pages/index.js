@@ -1,42 +1,63 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Card from '../components/Card';
-import Section from '../components/Section';
-import projectData from '../../data/projects.json'
+import Layout from '../components/layout';
+import { StaticQuery, graphql } from 'gatsby';
 
 const IndexPage = () => (
-  <div>
-    <div className="Hero">
-      <div className="HeroGroup">
-        <div className="Logos">
-          <img src={require('../images/all-projects.svg')} width="50"/>
-          <img src={require('../images/autodesk.png')} width="50"/>
-          <img src={require('../images/ucd.png')} width="50"/>
-          <img src={require('../images/LogoBig.png')} width="43"/>
-          <img src={require('../images/diy.svg')} width="50"/>
-        </div>
-        <div className="CardGroup">
-        {projectData.data.map(cell => (
-          cell.sharing==='public'&&<Card 
-          title={cell.title}
-          text={cell.description}
-          type={cell.type}
-          tags={cell.tags}
-          image={require('../images'+cell.imgName)}
-          />
-        ))}
+  <StaticQuery
+    query={graphql`
+      query ProjectDataQuery {
+        allContentfulProjects {
+          edges {
+            node {
+              image {
+                fluid {
+                  src
+                }
+              }
+              description {
+                description
+              }
+              tags
+              public
+              status
+              type
+              title
+              createdAt
+              timeStart(formatString: "YYYY")
+            }
+          }
+        }
+      }
+    `}
+    render={data => (<Layout>
+      <div>
+        <div className="Hero">
+          <div className="HeroGroup">
+            <div className="Logos">
+              <img alt="" src={require('../images/all-projects.svg')} width="50"/>
+              <img alt="" src={require('../images/autodesk.png')} width="50"/>
+              <img alt="" src={require('../images/ucd.png')} width="50"/>
+              <img alt="" src={require('../images/LogoBig.png')} width="43"/>
+              <img alt="" src={require('../images/diy.svg')} width="50"/>
+            </div>
+            <div className="CardGroup">
+            {data.allContentfulProjects.edges.map(edge => (
+              edge.node.public&&<Card 
+              key={edge.node.title}
+              title={edge.node.title}
+              text={edge.node.description.description}
+              type={edge.node.type}
+              tags={edge.node.tags}
+              image={edge.node.image.fluid.src}
+              />
+            ))}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <Section 
-      image={require('../images/bg_414.png')}
-      logoIG={require('../images/instagram-3-24.ico')}
-      logoLI={require('../images/linkedin-3-24.ico')}
-      logoTW={require('../images/twitter-3-24.ico')}
-      logoEM={require('../images/email-3-24.ico')}
-      title="Get In Touch"
-    />
-  </div>
-) 
+    </Layout>)}
+  />
+)
 
 export default IndexPage

@@ -52,6 +52,13 @@ const WaveTop = styled.div`
     top: -6px;
     transform: rotate(180deg);
 `
+const Copyright = styled.div`
+    color: darkgrey;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 100;
+`
 
 const Section = props => (
     <SectionGroup image={props.image}>
@@ -66,6 +73,7 @@ const Section = props => (
             <SectionLogo src={props.logoTW}/>
             <SectionLogo src={props.logoEM}/>
         </SectionLogos>
+        <Copyright>Made in React in SF ♡ Email me <a href="mailto:janeyouus@gmail.com">here</a>.  © 2019</Copyright>
     </SectionGroup>
 )
 
