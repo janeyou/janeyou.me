@@ -34,13 +34,7 @@ const IndexPage = () => (
       <div>
         <div className="Hero">
           <div className="HeroGroup">
-            <div className="Logos">
-              <img alt="" src={require('../images/all-projects.svg')} width="50"/>
-              <img alt="" src={require('../images/autodesk.png')} width="50"/>
-              <img alt="" src={require('../images/ucd.png')} width="50"/>
-              <img alt="" src={require('../images/LogoBig.png')} width="43"/>
-              <img alt="" src={require('../images/diy.svg')} width="50"/>
-            </div>
+            <div className="Logos" />
             <div className="CardGroup">
             {data.allContentfulProjects.edges.map(edge => (
               edge.node.public&&<Card 

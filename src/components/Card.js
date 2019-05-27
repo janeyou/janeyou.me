@@ -10,7 +10,7 @@ const Card = props => (
             <h3>{props.title}</h3>
             <h4>@{props.type}</h4>
             <p>{props.text}</p>
-            <h5>{props.tags.map(tag=>tag + '  ')}</h5>
+            {props.tags&&props.tags.length>0&&<h5>{props.tags.map(tag=>tag + '  ')}</h5>}
         </div>
     </div>
 )

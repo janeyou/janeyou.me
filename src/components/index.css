@@ -28,6 +28,7 @@ a:active {
 .Hero {
   background-color: rgba(251,251,251,1);
   padding: 0 0 1px 0;
+  margin: -50px 0 0 0;
 }
 
 .HeroGroup {

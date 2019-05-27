@@ -1,16 +1,21 @@
 import React from 'react'
-import Layout from '../components/layout';
+import Card from '../components/Card'
+import Layout from '../components/layout'
 
 const TalksPage = () => (
   <Layout>
     <div>
       <div className="Hero">
         <div className="HeroGroup">
-          <div className="Logos">
-            <p>some filters</p>
-          </div>
+          <div className="Logos" />
           <div className="CardGroup">
-          <p>some content coming up</p>
+            <Card 
+              title="Under Construction"
+              text="Coming soon. Contact me to ask anything."
+              type="talks"
+              tags=""
+              image=""
+            />
           </div>
         </div>
       </div>
