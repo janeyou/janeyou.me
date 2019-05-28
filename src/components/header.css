@@ -1,12 +1,16 @@
 .Header {
-    width: 100%;
-    padding: 50px 0;
-    background-color: rgba(251,251,251,1);
-    background-image: url('../images/bg_414.png');
-    background-size: cover;
-    position: relative;
-  }
-  
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgba(251, 251, 251, 1);
+  background-image: url('../images/bg_414.png');
+  background-size: cover;
+  position: relative;
+}
+
+.HeaderScrolled {
+  margin: 0 0 50px 0;
+}
+
 .HeaderGroup {
   margin: 0 auto;
   padding: 150px 50px;
@@ -30,24 +34,24 @@
 }
 
 .Header p {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
   font-weight: 50;
   line-height: 1.5;
 }
 
 .Header svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .Menu {
-    max-width: 760px;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    align-items: center;
-    justify-items: center;
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
 }
 
 .MenuDiv {
@@ -60,7 +64,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   height: 108px;
   backdrop-filter: blur(20px);
   z-index: 200;
@@ -87,18 +91,18 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
-  background:white;
+  background: white;
   width: 60px;
   height: 60px;
   padding: 9px 9px;
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 60px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .LinkColorActive {
-  color: grey
+  color: grey;
 }
 
 .LinkColorActive hr {
@@ -113,7 +117,7 @@
 }
 
 .LinkColorInactive {
-  color: lightgrey
+  color: lightgrey;
 }
 
 .LinkColorInactive hr {
@@ -141,14 +145,14 @@
 }
 
 .Menu button {
-    padding: 8px 20px;
-    font-size: 20px;
-    background: #56ccf2;
-    border: none;
-    font-weight: 700;
-    border-radius: 10px;
-    outline: none;
-    cursor: pointer;
+  padding: 8px 20px;
+  font-size: 20px;
+  background: #56ccf2;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 .WaveDiv {
@@ -156,35 +160,35 @@
 }
 
 @media (max-width: 640px) {
-    .Header {
-        padding: 0;
-    }
+  .Header {
+    padding: 0;
+  }
 
-    .Menu {
-        grid-template-columns: repeat(3,atuo)
-    }
+  .Menu {
+    grid-template-columns: repeat(3, atuo);
+  }
 
-    .MenuScrolled {
-      grid-template-columns: repeat(3,atuo)
-    }
+  .MenuScrolled {
+    grid-template-columns: repeat(3, atuo);
+  }
 
-    .Header a:nth-child(3) {
-        display: none;
-    }
+  .Header a:nth-child(3) {
+    display: none;
+  }
 
-    .Header .MenuScrolled a:nth-child(4) {
-      display: none;
+  .Header .MenuScrolled a:nth-child(4) {
+    display: none;
   }
 }
 
 @keyframes HeroAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

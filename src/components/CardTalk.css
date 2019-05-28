@@ -1,108 +1,107 @@
 .CardTalk {
-    max-width: 800px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 3px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    z-index:100;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 100;
 }
 
 .CardTalkLeft {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    background-color: #f4f4f4;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #f4f4f4;
 }
 
 .CardTalk:hover {
-    transform: scale(1.05,1.05);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    z-index:100;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
-
 .CardTalkLeft img {
-    max-height: 92%;
-    max-width: 92%;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+  max-height: 92%;
+  max-width: 92%;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
 }
 
 .CardTalk:hover img {
-    transform: scale(1.4,1.4);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  transform: scale(1.4, 1.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
 
 .CardTalk h3 {
-    font-size: 24px;
-    margin: 20px 0 0 20px;
-    background: linear-gradient(104deg, #c3c7d8 0%, lightgrey 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  margin: 20px 0 0 20px;
+  background: linear-gradient(104deg, #c3c7d8 0%, lightgrey 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .CardTalk a {
-    max-height: 100%;
-    max-width: 100%;
-    text-decoration: none;
-    text-transform: none;
-    background: none;
-    padding: 0;
-    border: none;
+  max-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+  text-transform: none;
+  background: none;
+  padding: 0;
+  border: none;
 }
 
 .CardTalk a:hover {
-    text-decoration: underline;
-    text-decoration-color: #A3E4D7;
-  }
+  text-decoration: underline;
+  text-decoration-color: #a3e4d7;
+}
 
 .CardTalk h4 {
-    color: rgba(180, 206, 214, 0.616);
-    font-size: 15px;
-    margin: 20px 20px 0 20px;
+  color: rgba(180, 206, 214, 0.616);
+  font-size: 15px;
+  margin: 20px 20px 0 20px;
 }
 
 .CardTalk h5 {
-    color: lightgrey;
-    font-size: 14px;
-    margin: 0 0 0 20px;
-    align-self: end;
-    text-align: left;
+  color: lightgrey;
+  font-size: 14px;
+  margin: 0 0 0 20px;
+  align-self: end;
+  text-align: left;
 }
 
 .CardTalk h6 {
-    color: darkgrey;
-    font-weight: 50;
-    font-size: 14px;
-    margin: 0 20px 0 0;
-    text-align: right;
+  color: darkgrey;
+  font-weight: 50;
+  font-size: 14px;
+  margin: 0 20px 0 0;
+  text-align: right;
 }
 
 .CardTalk p {
-    color: darkgrey;
-    font-weight: 50;
-    font-size: 14px;
-    margin: 0 0 20px 20px;
-    align-self: end;
+  color: darkgrey;
+  font-weight: 50;
+  font-size: 14px;
+  margin: 0 0 20px 20px;
+  align-self: end;
 }
 
 @media (max-width: 640px) {
-    .CardTalk {
-        display: block;
-    }
-    .CardTalkLeft {
-        height: 260px;
-    }
-
-    .CardTalk h4 {
-        display: none;
-    }
-
-    .CardTalk p {
-        display: none;
-    }
+  .CardTalk {
+    display: block;
   }
+  .CardTalkLeft {
+    height: 260px;
+  }
+
+  .CardTalk h4 {
+    display: none;
+  }
+
+  .CardTalk p {
+    display: none;
+  }
+}

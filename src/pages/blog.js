@@ -9,7 +9,7 @@ const BlogPage = () => (
         <div className="HeroGroup">
           <div className="Logos" />
           <div className="CardGroup">
-            <Card 
+            <Card
               title="Under Construction"
               text="Coming soon. Contact me to ask anything."
               type="blog"
@@ -21,6 +21,6 @@ const BlogPage = () => (
       </div>
     </div>
   </Layout>
-) 
+)
 
 export default BlogPage

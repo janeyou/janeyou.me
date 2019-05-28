@@ -12,21 +12,21 @@ a {
   color: darkgrey;
   font-weight: 300;
   text-decoration: underline;
-  text-decoration-color: #A3E4D7;
+  text-decoration-color: #a3e4d7;
 }
 a:visited {
   text-decoration: underline;
-  text-decoration-color: #A3E4D7;
+  text-decoration-color: #a3e4d7;
 }
 a:hover {
-  background-color: #E8F8F5;
+  background-color: #e8f8f5;
 }
 a:active {
-  background-color: #C7FFED;
+  background-color: #c7ffed;
 }
 
 .Hero {
-  background-color: rgba(251,251,251,1);
+  background-color: rgba(251, 251, 251, 1);
   padding: 0 0 1px 0;
   margin: -50px 0 0 0;
 }
@@ -54,21 +54,10 @@ a:active {
 }
 
 .Hero p {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
   font-weight: 50;
   line-height: 1.5;
-}
-
-.Hero a {
-  font-size: 17px;
-  font-weight: 600;
-  color: white;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.7);
-  padding: 9px 20px;
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 20px;
 }
 
 @media (max-width: 640px) {
@@ -87,7 +76,7 @@ a:active {
 
 @media (max-width: 640px) {
   .Hero .Logos {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -95,5 +84,5 @@ a:active {
   margin: 50px 0 100px;
   display: grid;
   grid-row-gap: 60px;
-  background-color: rgba(251,251,251,1);
+  background-color: rgba(251, 251, 251, 1);
 }

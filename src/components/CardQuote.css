@@ -1,87 +1,87 @@
 .CardQuote {
-    max-width: 800px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 3px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-    text-align: left;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    border-radius: 30px;
-    z-index:100;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border-radius: 30px;
+  z-index: 100;
 }
 
 .CardQuote:hover {
-    transform: scale(1.05,1.05);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    z-index:100;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .CardQuote h2 {
-    margin: 40px 0 0 20px;
-    font-size: 100px;
-    text-align: left;
-    color: lightgrey;
-    opacity: 0.5;
-    line-height: 0.5;
+  margin: 40px 0 0 20px;
+  font-size: 100px;
+  text-align: left;
+  color: lightgrey;
+  opacity: 0.5;
+  line-height: 0.5;
 }
 
 .CardQuote h1 {
-    margin: 0 20px 0 0;
-    font-size: 100px;
-    text-align: right;
-    color:  lightgrey;
-    line-height: 1;
-    opacity: 0.5;
+  margin: 0 20px 0 0;
+  font-size: 100px;
+  text-align: right;
+  color: lightgrey;
+  line-height: 1;
+  opacity: 0.5;
 }
 
 .CardQuote h3 {
-    font-size: 18px;
-    font-Weight: 50;
-    margin: 0 30px 0 40px;
-    color: grey;
+  font-size: 18px;
+  font-weight: 50;
+  margin: 0 30px 0 40px;
+  color: grey;
 }
 
 .CardQuote h4 {
-    color: lightblue;
-    font-size: 15px;
-    margin: 20px 20px 0 20px;
-    align-self: end;
+  color: lightblue;
+  font-size: 15px;
+  margin: 20px 20px 0 20px;
+  align-self: end;
 }
 
 .CardQuote h5 {
-    color: silver;
-    font-size: 14px;
-    margin: 3px 40px 30px 0;
-    text-align: right;
-    font-Weight: 100;
+  color: silver;
+  font-size: 14px;
+  margin: 3px 40px 30px 40px;
+  text-align: right;
+  font-weight: 100;
 }
 
 .CardQuoteFooter h5 {
-    color: silver;
-    font-size: 14px;
-    margin: 20px 40px 30px 0;
-    text-align: right;
-    font-Weight: 100;
+  color: silver;
+  font-size: 14px;
+  margin: 20px 40px 30px 40px;
+  text-align: right;
+  font-weight: 100;
 }
 
 .CardQuote h6 {
-    color: darkgrey;
-    font-size: 14px;
-    text-align: right;
-    font-Weight: 300;
-    margin: -40px 40px 0 0;
+  color: darkgrey;
+  font-size: 14px;
+  text-align: right;
+  font-weight: 300;
+  margin: -40px 40px 0 40px;
 }
 
 @media (max-width: 640px) {
-    .CardQuote {
-        display: block;
-    }
-
-    .CardQuote h4 {
-        display: none;
-    }
-
-    .CardQuote p {
-        display: none;
-    }
+  .CardQuote {
+    display: block;
   }
+
+  .CardQuote h4 {
+    display: none;
+  }
+
+  .CardQuote p {
+    display: none;
+  }
+}

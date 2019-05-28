@@ -1,10 +1,9 @@
 import React from 'react'
 import CardTalk from '../components/CardTalk'
 import Layout from '../components/layout'
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby'
 
 class TalksPage extends React.Component {
-
   render() {
     return (
       <Layout>
@@ -13,36 +12,41 @@ class TalksPage extends React.Component {
             <div className="HeroGroup">
               <div className="Logos" />
               <div className="CardGroup">
-              {this.props.data.edges.map(edge => (
-                edge.node.public&&<CardTalk 
-                key={edge.node.title}
-                title={edge.node.title}
-                text={edge.node.description}
-                loc={edge.node.location}
-                image={edge.node.image.fluid.src}
-                date={edge.node.date}
-                org={edge.node.organizer}
-                url={edge.node.url}
-                url2={edge.node.url2}
-                />
-              ))}
-              {this.props.data.edges.length===0&&<CardTalk
-                key="talk"
-                title="Under Construction"
-                text="Coming soon. Feel free to contact me."
-                loc="talk"
-                image=""
-                date=""
-                org=""
-                url=""
-                url2=""
-              />}
+                {this.props.data.edges.map(
+                  edge =>
+                    edge.node.public && (
+                      <CardTalk
+                        key={edge.node.title}
+                        title={edge.node.title}
+                        text={edge.node.description}
+                        loc={edge.node.location}
+                        image={edge.node.image.fluid.src}
+                        date={edge.node.date}
+                        org={edge.node.organizer}
+                        url={edge.node.url}
+                        url2={edge.node.url2}
+                      />
+                    )
+                )}
+                {this.props.data.edges.length === 0 && (
+                  <CardTalk
+                    key="talk"
+                    title="Under Construction"
+                    text="Coming soon. Feel free to contact me."
+                    loc="talk"
+                    image=""
+                    date=""
+                    org=""
+                    url=""
+                    url2=""
+                  />
+                )}
               </div>
             </div>
           </div>
         </div>
       </Layout>
-    );
+    )
   }
 }
 
@@ -71,8 +75,6 @@ export default () => (
         }
       }
     `}
-    render={data => (
-      <TalksPage data={data.allContentfulTalks} />
-    )}
+    render={data => <TalksPage data={data.allContentfulTalks} />}
   />
 )
