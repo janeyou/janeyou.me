@@ -73,7 +73,7 @@ const Section = props => (
             <SectionLogo src={props.logoTW}/>
             <SectionLogo src={props.logoEM}/>
         </SectionLogos>
-        <Copyright>Made in React in SF ♡ Email me <a href="mailto:janeyouus@gmail.com">here</a>.  © 2019</Copyright>
+        <Copyright>Made in React ♡ <a href="mailto:janeyouus@gmail.com">Email</a> me.  © 2019</Copyright>
     </SectionGroup>
 )
 
