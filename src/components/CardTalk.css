@@ -1,84 +1,108 @@
-.Card {
+.CardTalk {
     max-width: 800px;
     position: relative;
     overflow: hidden;
     border-radius: 3px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.25);
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1fr 1fr;
     text-align: left;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     z-index:100;
 }
 
-.CardLeft {
+.CardTalkLeft {
     display: grid;
     align-items: center;
     justify-items: center;
     background-color: #f4f4f4;
 }
 
-.Card:hover {
+.CardTalk:hover {
     transform: scale(1.05,1.05);
     box-shadow: 0 30px 60px rgba(0,0,0,0.5);
     z-index:100;
 }
 
 
-.CardLeft img {
-    max-height: 90%;
-    max-width: 90%;
+.CardTalkLeft img {
+    max-height: 92%;
+    max-width: 92%;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     box-shadow: 0 30px 60px rgba(0,0,0,0.25);
 }
 
-.Card:hover img {
-    transform: scale(1.1,1.1);
+.CardTalk:hover img {
+    transform: scale(1.4,1.4);
     box-shadow: 0 30px 60px rgba(0,0,0,0.5);
 }
 
-.Card h3 {
-    font-size: 30px;
-    margin: 20px 20px 0 20px;
+.CardTalk h3 {
+    font-size: 24px;
+    margin: 20px 0 0 20px;
     background: linear-gradient(104deg, #c3c7d8 0%, lightgrey 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.Card h4 {
-    color: lightblue;
+.CardTalk a {
+    max-height: 100%;
+    max-width: 100%;
+    text-decoration: none;
+    text-transform: none;
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+.CardTalk a:hover {
+    text-decoration: underline;
+    text-decoration-color: #A3E4D7;
+  }
+
+.CardTalk h4 {
+    color: rgba(180, 206, 214, 0.616);
     font-size: 15px;
     margin: 20px 20px 0 20px;
 }
 
-.Card h5 {
+.CardTalk h5 {
     color: lightgrey;
-    font-size: 15px;
-    margin: 0 20px 20px 0;
+    font-size: 14px;
+    margin: 0 0 0 20px;
     align-self: end;
+    text-align: left;
+}
+
+.CardTalk h6 {
+    color: darkgrey;
+    font-weight: 50;
+    font-size: 14px;
+    margin: 0 20px 0 0;
     text-align: right;
 }
 
-.Card p {
-    color: grey;
+.CardTalk p {
+    color: darkgrey;
     font-weight: 50;
-    font-size: 18px;
+    font-size: 14px;
     margin: 0 0 20px 20px;
+    align-self: end;
 }
 
 @media (max-width: 640px) {
-    .Card {
+    .CardTalk {
         display: block;
     }
-    .CardLeft {
+    .CardTalkLeft {
         height: 260px;
     }
 
-    .Card h4 {
+    .CardTalk h4 {
         display: none;
     }
 
-    .Card p {
+    .CardTalk p {
         display: none;
     }
   }
