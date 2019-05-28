@@ -24,6 +24,9 @@ cd gatsby-example-site
 gatsby develop
 ```
 
+## upgrade Gatsby from V1 to V2
+[Detailed guidance](https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/#updating-your-dependencies)
+
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

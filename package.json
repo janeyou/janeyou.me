@@ -5,7 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.7.3",
-    "gatsby-link": "next",
+    "gatsby-link": "^2.1.1",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-source-contentful": "^2.0.63",
     "react": "^16.8.6",
@@ -33,5 +33,5 @@
   },
   "peerDependencies": {
     "gatsby": ">=1"
-    }
+  }
 }
