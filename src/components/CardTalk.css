@@ -39,9 +39,8 @@
 .CardTalk h3 {
   font-size: 24px;
   margin: 20px 0 0 20px;
-  background: linear-gradient(104deg, #c3c7d8 0%, lightgrey 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: grey;
+  font-weight: 50;
 }
 
 .CardTalk a {
@@ -71,6 +70,7 @@
   margin: 0 0 0 20px;
   align-self: end;
   text-align: left;
+  font-weight: 50;
 }
 
 .CardTalk h6 {

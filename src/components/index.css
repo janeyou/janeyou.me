@@ -20,9 +20,11 @@ a:visited {
 }
 a:hover {
   background-color: #e8f8f5;
+  color: darkgrey;
 }
 a:active {
   background-color: #c7ffed;
+  color: darkgrey;
 }
 
 .Hero {
