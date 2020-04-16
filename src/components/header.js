@@ -59,7 +59,7 @@ class Header extends React.Component {
               alt="avatar"
             />
             <h1>Jane You</h1>
-            <h2>Senior Product Manager @ Autodesk</h2>
+            <h2>Senior Product Manager @ Dropbox</h2>
             <p>
               <span role="img" aria-label="reading">
                 📝
