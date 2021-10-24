@@ -68,7 +68,7 @@ class Header extends React.Component {
               <span role="img" aria-label="reading">
                🏋️‍♀️
               </span>
-              Weight Squatter  |{' '}
+              MAF Slow Weights  |{' '}
               <span role="img" aria-label="reading">
                💫
               </span>
