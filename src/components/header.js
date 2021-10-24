@@ -66,13 +66,13 @@ class Header extends React.Component {
               </span>
               Habit Tracker |{' '}
               <span role="img" aria-label="reading">
-                🍜
+               🏋️‍♀️
               </span>
-              Ramen enthusiast |{' '}
+              Weight Squatter  |{' '}
               <span role="img" aria-label="reading">
-                📈
+               💫
               </span>
-              Thriving<br /> for Data, Discipline, Creativity
+              Thriving<br /> for crytpo, web3, data intelligence, health span
             </p>
             <div
               className={
