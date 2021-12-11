@@ -72,7 +72,7 @@ class Header extends React.Component {
               <span role="img" aria-label="reading">
                💫
               </span>
-              Thriving<br /> for web3, data intelligence, health span
+              Thriving<br /> for web3, carbon tracking, data intelligence, health span
             </p>
             <div
               className={
