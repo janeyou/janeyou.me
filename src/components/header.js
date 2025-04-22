@@ -66,7 +66,7 @@ class Header extends React.Component {
               </span>
               Habit Tracker |{' '}
               <span role="img" aria-label="reading">
-               🏋️‍♀️
+               🏄🏻‍♀️
               </span>
               App Traveler  |{' '}
               <span role="img" aria-label="reading">
