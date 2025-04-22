@@ -59,7 +59,7 @@ class Header extends React.Component {
               alt="avatar"
             />
             <h1>Jane You</h1>
-            <h2>Senior Product Manager @ Dropbox</h2>
+            <h2>🚀 Tech PM & Builder</h2>
             <p>
               <span role="img" aria-label="reading">
                 📝
@@ -68,11 +68,11 @@ class Header extends React.Component {
               <span role="img" aria-label="reading">
                🏋️‍♀️
               </span>
-              MAF Slow Weights  |{' '}
+              App Traveler  |{' '}
               <span role="img" aria-label="reading">
                💫
               </span>
-              Thriving<br /> for web3, carbon tracking, data intelligence, health span
+              Thriving<br /> for AI, Cloud Infra, Early Child & Adult Intelligence Devlopment , Health Span
             </p>
             <div
               className={
